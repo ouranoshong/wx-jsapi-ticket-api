@@ -1,0 +1,22 @@
+{
+    "name": "ouranoshong/wx-jsapi-ticket-api",
+    "description": "wei xin get jsapi ticket sdk",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ouranoshong",
+            "email": "ouranoshong@outlook.com"
+        }
+    ],
+    "require": {
+				"php": ">=7.1",
+        "ouranoshong/wx-access-token-api": "^0.4.1",
+        "symfony/console": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wx\\JSAPI\\Ticket\\": "src"
+        }
+    }
+}
