@@ -15,10 +15,10 @@ class FileStorageHandler implements StorageHandlerInterface
 
     public function generateFileName($key) {
         if (!$this->savePath) {
-            $this->savePath = sys_get_temp_dir() . '/'.$key;
+            $this->savePath = sys_get_temp_dir();
         }
 
-        return $this->savePath;
+        return $this->savePath . '/'. $key;
     }
 
     public function save($key, $value)
